@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="_3">3.</string>
+    <string name="res_values">####</string>
+    <string name="percentage">Percentage</string>
+    <string name="_1">1.</string>
+    <string name="total_marks">Total Marks</string>
+    <string name="res">####</string>
+    <string name="_2">2.</string>
+    <string name="grade">Grade</string>
+    <string name="result">Result:</string>
+    <string name="goback">GO BACK</string>
+    <string name="your_performance">Your Performance</string>
+</resources>

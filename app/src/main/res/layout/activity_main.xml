@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="Student Grade Calculator"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_menu_book_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Enter your marks below: "
+        android:textAllCaps="true"
+        android:textSize="15sp" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TableRow
+            android:background="#f2f2f2"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="Sr. No."
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Subjects"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Marks"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="1." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mathematics" />
+
+            <EditText
+                android:id="@+id/marks1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+
+                android:maxLength="3" />
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="2." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Operating System" />
+
+            <EditText
+                android:id="@+id/marks2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="3." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Computer Organization &amp; \n Architecture" />
+
+            <EditText
+                android:id="@+id/marks3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="4." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Data Structures &amp; \n Algorithm" />
+
+            <EditText
+                android:id="@+id/marks4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="5." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Web Technologies" />
+
+            <EditText
+                android:id="@+id/marks5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/cal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:text="CALCULATE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/Grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>
